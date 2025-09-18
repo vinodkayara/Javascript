@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome Javascript Learning</h1>
+    <h4 id="one"></h4>
+    <script>
+        /*differenece between inner html and text content
+
+
+        innerHtML-> if we have anynhtml elements present whlile using innerHTML
+         then inner html proprty  will recognise the html tags 
+        */
+       let h4ref=document.getElementById('one')
+       h4ref.innerHTML="<i><u>HELlo how are you</u></i>"
+       /*
+       textcontent-> if we have any html ellement present
+        while using textcontent then textcontent property will not recognise
+       */
+
+        let h4ref1=document.getElementById('one')
+       h4ref1.textContent="<i><u>HELlo how are you</u></i>"
+    </script>
+</body>
+</html>

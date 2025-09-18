@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>class selector</h2>
+    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime rem accusamus distinctio temporibus tenetur autem debitis numquam id voluptate odio, natus porro recusandae quaerat iure officiis placeat cumque atque sapiente.</p>
+    <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime rem accusamus distinctio temporibus tenetur autem debitis numquam id voluptate odio, natus porro recusandae quaerat iure officiis placeat cumque atque sapiente.</p>
+    <p class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime rem accusamus distinctio temporibus tenetur autem debitis numquam id voluptate odio, natus porro recusandae quaerat iure officiis placeat cumque atque sapiente.</p>
+    <script>
+        /*
+        9.document.getElementByClassName()
+
+        by using this method we can access the html elemnets  based on class name 
+        it will return the out put as array format
+        
+        */
+       let pref=document.getElementsByClassName('p1')
+       console.log(pref)
+       for(var x of pref){
+        x.style.fontSize="larger"
+        x.style.color="blue"
+        x.style.fontFamily="cursive"
+        x.innerHTML="Welcome"
+       }
+
+
+
+    </script>
+    
+</body>
+</html>
