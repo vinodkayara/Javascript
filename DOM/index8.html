@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Name</label><input id="one" type="text">
+    <label></label><input id="two" type="radio">
+    <a href="https://www.youtube.com">HyperText</a>
+    <img src="www.virat.jps" alt="img">
+
+    <script>
+        /*
+        setAttribute()
+
+        syntax:    setAttribute(name,value)   
+        
+        -> this method  is used to set a new attribute or to change the attribute of existing value of 
+         an element 
+        */
+        let inputref=document.getElementById('one')
+        inputref.setAttribute('type','password')
+
+          let inputref2=document.getElementById('two')
+        inputref2.setAttribute('type','checkbox')
+
+
+        /*
+        getAttribute()
+        syntax: getAttribute(atr name ) -> It is  retrives the value of specify attributes  from an html elements .\
+        */
+      let inputref3 = document.getElementById('one')
+      let res=inputref3.getAttribute(type)
+      console.log(res)
+
+    </script>
+    
+</body>
+</html>

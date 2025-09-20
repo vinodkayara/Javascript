@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="two"> Dom methods example</h1>
+    <p>Helllo</p>
+    <div id="one">
+
+    </div>
+    <script>
+        /*document.createElement()
+        by using this method we can create html elements on the web page 
+        in order to dynamically updend the created eleement to webpage we have append() and append Child() method
+
+
+        */
+       let btnref=document.createElement('button')
+       btnref.innerHTML="dynamic button"
+       let body=document.body
+       body.append(btnref)
+       btnref.style.backgroundColor="blue"
+       btnref.style.color="white"
+       btnref.style.height="100px"
+       let pref=document.createElement('p')
+       pref.textContent="Hello How are you"
+       body.append(pref)
+      let  dref=document.getElementById('one')
+     let h4ref= document.createElement('h4')
+     h4ref.innerHTML="pentagoonSpace"
+     h4ref.style.color="blue"
+     dref.appendChild(h4ref)
+
+     /*remove()
+     
+     */
+    let h1ref=document.getElementById('two')
+    h1ref.remove()
+    pref.remove()
+    dref.remove()
+    
+    </script>
+    
+</body>
+</html>

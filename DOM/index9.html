@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        header{
+            background-color: black;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            padding: 50px;
+        }
+        h2,p,button{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My first page with javascript</h1>
+    </header>
+    <div>
+        <h2>user details</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel eum labore maiores, veritatis voluptas quos illo assumenda iusto aperiam numquam et reiciendis, quam incidunt repellendus corporis eos tenetur aliquid, possimus magnam placeat id vitae perferendis quod unde. Dolorum, eius? Maxime, odit cupiditate voluptatum molestias nisi commodi id necessitatibus laboriosam. Perferendis.</p>
+   <button onclick="createtable()">get user's details</button>
+    </div>
+    <script>
+        function createtable(){
+           let table= document.createElement('table')
+           let tr1=document.createElement('tr')
+           let tr2=document.createElement('tr')
+           let tr3=document.createElement('tr')
+           let tr4=document.createElement('tr')
+
+           let th1=document.createElement('th')
+           let th2=document.createElement('th')
+           let th3=document.createElement('th')
+
+           let td1=document.createElement('td')
+           let td2=document.createElement('td')
+           let td3=document.createElement('td')
+
+           let td4=document.createElement('td')
+           let td5=document.createElement('td')
+           let td6=document.createElement('td')
+
+           let td7=document.createElement('td')
+           let td8=document.createElement('td')
+           let td9=document.createElement('td')
+
+           th1.innerHTML="Id"
+           th2.innerHTML="Name"
+           th3.innerHTML="Email"
+
+           td1.innerHTML="101"
+           td2.innerHTML="Raj verma"
+           td3.innerHTML="Raj@gmail.com"
+
+           td4.innerHTML="102"
+           td5.innerHTML="Riya verma"
+           td6.innerHTML="Riya@gmail.com"
+
+           td7.innerHTML="103"
+           td8.innerHTML="salman khan"
+           td9.innerHTML="salman@gmail.com"
+
+           tr1.appendChild(th1)
+           tr1.appendChild(th2)
+           tr1.appendChild(th3)
+
+           tr2.appendChild(td1)
+           tr2.appendChild(td2)
+           tr2.appendChild(td3)
+
+           tr3.appendChild(td4)
+           tr3.appendChild(td5)
+           tr3.appendChild(td6)
+
+           tr4.appendChild(td7)
+           tr4.appendChild(td8)
+           tr4.appendChild(td9)
+
+           table.appendChild(tr1)
+           table.appendChild(tr2)
+           table.appendChild(tr3)
+           table.appendChild(tr4)
+
+           table.width="800px"
+           table.frame="box"
+           table.rules="all"
+           table.style.margin="auto"
+           table.cellPadding="10px"
+
+           tr1.style.backgroundColor="black"
+           tr1.style.color="white"
+           tr2.align="center"
+              tr3.align="center"
+                 tr4.align="center"
+
+                 document.body.append(table)
+        }
+    </script>
+</body>
+</html>
