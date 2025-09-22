@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <button onclick="onButtonClick()">Click here</button>
+    <script>
+        function onButtonClick(){
+            let body=document.getElementById('body')
+            let para=document.createElement('p')
+            para.innerHTML="hello every one i generated the paragraph read it"
+            body.append(para)
+        }
+    </script>
+    
+</body>
+</html>

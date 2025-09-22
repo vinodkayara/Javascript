@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Gender</label>
+    <input type="radio" name="gender" onchange="Gender(event)" value="male">male
+    <input type="radio" name="gender" onchange="Gender(event)" value="female">female
+    <script>
+
+        function Gender(e){
+            alert(e.target.value+" option selected")
+        }
+    </script>
+
+</body>
+</html>

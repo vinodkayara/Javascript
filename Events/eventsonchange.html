@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=6, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">select option</label>
+    <select onchange="optionChnage(event)">
+        <option value="one">One</option>
+        <option value="two">Two</option>
+        <option value="three">Three</option>
+        <option value="four">Four</option>
+        <option value="five">Five</option>
+    </select>
+    <script>
+        function optionChnage(e){
+            alert("option change to "+e.target.value)
+
+        }
+
+    </script>
+</body>
+</html>
