@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        center{
+            width: 600px;
+            height: 600px;
+            box-shadow: 0px 0px 10px black;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- onsubmit -->
+     <!-- this event listener is used in a form validation  -->
+      <center>
+        <form onsubmit="validateForm()">
+            <label for="">First Name</label>
+            <input type="text" name="fname" id="fname">
+            <br><br>
+             <label for="">Last Name</label>
+            <input type="text" name="lname" id="lname">
+            <br><br>
+            <label for="">Email</label>
+            <input type="email" name="email" id="email">
+             <br><br>
+             <label for="">Password</label>
+            <input type="password" name="pwd" id="pwd">
+             <br><br>
+             <label for="">Confirm Password</label>
+            <input type="password" name="cpwd" id="cpwd">
+             <br><br>
+            <input type="submit">
+
+        </form>
+      </center>
+      <script>
+        function validateForm(){
+        let fname=    document.getElementById('fname').value
+       
+        let lname=    document.getElementById('lname').value
+         let email=    document.getElementById('email').value
+        let pwd=    document.getElementById('pwd').value
+        let cpwd=    document.getElementById('cpwd').value
+
+        if(fname===""|| email==="" || lname===""|| pwd==="" || cpwd===""){
+            alert("Please fill all the input field ")
+
+        }else if(pwd!=cpwd){
+            alert("password is not matching")
+        }
+        
+        else{
+            alert("form submitted successfully")
+        }
+        }
+
+      </script>
+</body>
+</html>

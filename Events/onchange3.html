@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <label for="">Skills</label>
+    <input type="checkbox" name="java" onchange="Gender(event)" value="java">java <br>
+      <input type="checkbox" name="python" onchange="Gender(event)" value="python">Python <br>
+        <input type="checkbox" name="js" onchange="Gender(event)" value="js">JavaScript <br>
+          <input type="checkbox" name="react"  onchange="Gender(event)" value="react">Rect JS <br>
+              <script>
+
+        function Gender(e){
+            let body=document.getElementById('body')
+            let para=document.createElement('p')
+            para.innerHTML=(e.target.value+" option selected")
+            body.append(para)
+           
+        }
+    </script>
+
+    
+</body>
+</html>

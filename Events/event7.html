@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- onfocus -->
+     <!-- this is event in js is triggered when an elemnets gains focus usualy  throgh keyboard (like pressing tab key) -->
+      <input type="text" placeholder="enter the text.." id ="one" onfocus="FocusElement()">
+      <script>
+        function FocusElement(){
+            let input=document.getElementById('one')
+            input.style.height="70px"
+            input.style.width="200px"
+            input.style.backgroundColor="pink"
+            input.style.fontSize="x-large"
+            input.style.outline="1px dotted blue"
+        }
+      </script>
+</body>
+</html>
