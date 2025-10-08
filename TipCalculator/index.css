@@ -1,0 +1,30 @@
+main{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    
+
+}
+
+.box{
+    border: 2px solid black;
+    padding:50px;
+    border-radius: 10px;
+    background-color: #f0e890;
+}
+
+label{
+    color: rgb(117, 33, 226);
+}
+
+input{
+    background-color: #d6d2ba;
+}
+
+#btn{
+    background-color: hsl(71, 60%, 64%);
+    height: 30px;
+    width: 70px;
+    border-radius: 50px;
+    
+}
