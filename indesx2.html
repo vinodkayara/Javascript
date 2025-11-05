@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="one">Welcome to OOo</h1>
+    <h2 id="two">thank you to OOo</h2>
+    <p id="three"></p>
+    <h1 id="four">Welcomeee</h1>
+    <button onclick="change()">click</button>
+    <script>
+        //6.document.getElementById
+
+        let h1ref=document.getElementById('one')
+        console.log(h1ref)
+
+          let h2ref=document.getElementById('two')
+          h2ref.innerHTML="I am Vinod"
+
+          let pref=document.getElementById('three')
+          pref.textContent="I am vikas"
+
+          function change(){
+            let href=document.getElementById('four')
+            href.innerHTML="Thank you"
+          }
+
+    </script>
+</body>
+</html>
